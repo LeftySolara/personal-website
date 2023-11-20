@@ -1,0 +1,40 @@
+@use "../base/typography";
+@use "../themes/default" as theme;
+
+.hero-heading {
+  font-family: $heading-font-stack;
+  font-size: 64px;
+}
+
+.hero-body {
+  font-family: $body-font-stack;
+  font-size: 18px;
+}
+
+.red {
+  color: map-get(theme.$colors, "red");
+}
+
+.peach {
+  color: map-get(theme.$colors, "peach");
+}
+
+.yellow {
+  color: map-get(theme.$colors, "yellow");
+}
+
+.green {
+  color: map-get(theme.$colors, "green");
+}
+
+.blue {
+  color: map-get(theme.$colors, "blue");
+}
+
+.lavender {
+  color: map-get(theme.$colors, "lavender");
+}
+
+.mauve {
+  color: map-get(theme.$colors, "mauve");
+}
