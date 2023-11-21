@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Hero = () => {
   return (
     <div>
@@ -23,6 +25,11 @@ const Hero = () => {
         <span className="mauve">e</span>
         <span className="red">r</span>.
       </p>
+      <div className="button-container">
+        <Button label="ABOUT ME" color="rosewater" link="/about" />
+        <Button label="MY PROJECTS" color="sky" link="/projects" />
+        <Button label="GET IN TOUCH" color="green" link="/contact" />
+      </div>
     </div>
   );
 };
