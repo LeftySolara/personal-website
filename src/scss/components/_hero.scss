@@ -1,9 +1,40 @@
 @use "../base/typography";
 @use "../themes/default" as theme;
 
+.hero {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 80vh;
+}
+
+.hero-image {
+  filter: grayscale(100%);
+  width: 50vw;
+  height: 100%;
+  border-bottom-left-radius: 54px;
+  object-fit: cover;
+}
+
+.hero-left {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 50vw;
+}
+
 .hero-heading {
   font-family: $heading-font-stack;
-  font-size: 64px;
+  font-weight: $font-weight-regular;
+  font-size: 96px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-body-container {
+  width: 100%;
+  padding: 0px 144px 0px 144px;
 }
 
 .hero-body {
@@ -43,6 +74,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .button {
