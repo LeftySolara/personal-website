@@ -1,4 +1,4 @@
-import Button from "@/components/Hero/Button";
+import Button from "@/components/Button/Button";
 
 const Hero = () => {
   return (
@@ -29,9 +29,15 @@ const Hero = () => {
           </p>
         </div>
         <div className="button-container">
-          <Button label="ABOUT ME" color="rosewater" link="/about" />
-          <Button label="MY PROJECTS" color="sky" link="/projects" />
-          <Button label="GET IN TOUCH" color="green" link="/contact" />
+          <Button color="rosewater" href="/about">
+            ABOUT ME
+          </Button>
+          <Button color="sky" href="/projects">
+            MY PROJECTS
+          </Button>
+          <Button color="green" href="/contact">
+            GET IN TOUCH
+          </Button>
         </div>
       </div>
       <div className="hero-image-container">

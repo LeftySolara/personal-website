@@ -76,24 +76,3 @@
   justify-content: space-evenly;
   width: 100%;
 }
-
-.button {
-  color: map-get(theme.$colors, "surface1");
-  font-family: $body-font-stack;
-  font-size: 20px;
-  padding: 12px 28px 12px 28px;
-  border: none;
-  box-shadow: 4px 4px 0px map-get(theme.$colors, "surface1");
-}
-
-.button-rosewater {
-  background-color: map-get(theme.$colors, "rosewater");
-}
-
-.button-sky {
-  background-color: map-get(theme.$colors, "sky");
-}
-
-.button-green {
-  background-color: map-get(theme.$colors, "green");
-}

@@ -1,0 +1,22 @@
+@use "../themes/default" as theme;
+
+.button {
+  color: map-get(theme.$colors, "surface1") !important;
+  font-family: $body-font-stack;
+  font-size: 20px;
+  padding: 12px 28px 12px 28px;
+  border: none;
+  box-shadow: 4px 4px 0px map-get(theme.$colors, "surface1");
+
+  &.rosewater {
+    background-color: map-get(theme.$colors, "rosewater");
+  }
+
+  &.sky {
+    background-color: map-get(theme.$colors, "sky");
+  }
+
+  &.green {
+    background-color: map-get(theme.$colors, "green");
+  }
+}
