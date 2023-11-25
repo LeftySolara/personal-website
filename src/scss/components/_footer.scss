@@ -1,0 +1,12 @@
+@use "../base//typography";
+@use "../themes/default" as theme;
+
+.footer {
+  font-family: $body-font-stack;
+  color: map-get(theme.$colors, "surface1");
+}
+
+.footer a {
+  font-weight: $font-weight-semibold;
+  color: map-get(theme.$colors, "mauve");
+}
