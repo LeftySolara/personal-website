@@ -5,6 +5,7 @@
   display: flex;
   flex-flow: row nowrap;
   height: 80vh;
+  color: map-get(theme.$colors, "base");
 }
 
 .hero-image {
@@ -34,12 +35,13 @@
 
 .hero-body-container {
   width: 100%;
-  padding: 0px 144px 0px 144px;
+  padding: 0px 96px 0px 96px;
 }
 
 .hero-body {
   font-family: $body-font-stack;
   font-size: 18px;
+  color: map-get(theme.$colors, "surface1");
 }
 
 .red {
