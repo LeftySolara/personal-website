@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
 
-export type ButtonColor = "rosewater" | "sky" | "green";
+export type ButtonLinkColor = "rosewater" | "sky" | "green";
 
 /**
- * A simple button component.
+ * A simple button component that acts as a link.
  *
  * @param color - The button's background color.
  * @param href - Where the button links to.
  * @param children - The text for the button to display.
  */
 
-const Button = ({
+const ButtonLink = ({
   color,
   href,
   children,
 }: {
-  color: ButtonColor;
+  color: ButtonLinkColor;
   href: string;
   children: React.ReactNode;
 }) => {
@@ -26,4 +26,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default ButtonLink;

@@ -1,4 +1,4 @@
-import Button from "@/components/Button/Button";
+import ButtonLink from "@/components/Button/ButtonLink";
 
 const Hero = () => {
   return (
@@ -29,15 +29,15 @@ const Hero = () => {
           </p>
         </div>
         <div className="button-container">
-          <Button color="rosewater" href="/about">
+          <ButtonLink color="rosewater" href="/about">
             ABOUT ME
-          </Button>
-          <Button color="sky" href="/projects">
+          </ButtonLink>
+          <ButtonLink color="sky" href="/projects">
             MY PROJECTS
-          </Button>
-          <Button color="green" href="/contact">
+          </ButtonLink>
+          <ButtonLink color="green" href="/contact">
             GET IN TOUCH
-          </Button>
+          </ButtonLink>
         </div>
       </div>
       <div className="hero-image-container">
