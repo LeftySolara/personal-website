@@ -20,8 +20,8 @@ const Button = ({
   children: React.ReactNode;
 }) => {
   return (
-    <Link to={href}>
-      <button className={`button ${color}`}>{children}</button>
+    <Link to={href} className={`button ${color}`}>
+      {children}
     </Link>
   );
 };
