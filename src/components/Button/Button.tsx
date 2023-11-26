@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export type ButtonColor = "rosewater" | "sky" | "green";
 
 /**
@@ -18,9 +20,9 @@ const Button = ({
   children: React.ReactNode;
 }) => {
   return (
-    <a href={href}>
+    <Link to={href}>
       <button className={`button ${color}`}>{children}</button>
-    </a>
+    </Link>
   );
 };
 

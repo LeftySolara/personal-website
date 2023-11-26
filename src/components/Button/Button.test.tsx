@@ -1,12 +1,13 @@
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
+import { renderWithRouter } from "@/test/testUtils";
 import Button from "./Button";
 
 describe("The Button component", () => {
   it("Should display the provided text", () => {
     const label = "Example";
 
-    render(
+    renderWithRouter(
       <Button color="rosewater" href="/">
         {label}
       </Button>,
@@ -21,7 +22,7 @@ describe("The Button component", () => {
     const path = "/example";
     const label = "Example";
 
-    render(
+    renderWithRouter(
       <Button color="rosewater" href={path}>
         {label}
       </Button>,
