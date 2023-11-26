@@ -1,7 +1,7 @@
-import Hero from "./components/Hero/Hero";
 import Footer from "@/components/Footer/Footer";
+import Hero from "@/components/Hero/Hero";
 
-const App = () => {
+const HomePage = () => {
   return (
     <>
       <Hero />
@@ -10,4 +10,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default HomePage;
