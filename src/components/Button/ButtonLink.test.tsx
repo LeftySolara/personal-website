@@ -1,16 +1,16 @@
 import { screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 import { renderWithRouter } from "@/test/testUtils";
-import Button from "./Button";
+import ButtonLink from "./ButtonLink";
 
-describe("The Button component", () => {
+describe("The ButtonLink component", () => {
   it("Should display the provided text", () => {
     const label = "Example";
 
     renderWithRouter(
-      <Button color="rosewater" href="/">
+      <ButtonLink color="rosewater" href="/">
         {label}
-      </Button>,
+      </ButtonLink>,
     );
 
     const button = screen.getByText(label);
@@ -23,9 +23,9 @@ describe("The Button component", () => {
     const label = "Example";
 
     renderWithRouter(
-      <Button color="rosewater" href={path}>
+      <ButtonLink color="rosewater" href={path}>
         {label}
-      </Button>,
+      </ButtonLink>,
     );
 
     const button = screen.getByRole("link");
