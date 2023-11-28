@@ -9,6 +9,11 @@
   font-family: $body-font-stack;
   font-size: 20px;
   color: map-get(theme.$colors, "surface1");
+
+  @include media(">phone", "<=tablet") {
+    flex-flow: column nowrap;
+    gap: 20px;
+  }
 }
 
 .footer a {
@@ -19,6 +24,11 @@
 .footer-body-container {
   width: 50%;
   padding: 0px 96px 0px 96px;
+
+  @include media(">phone", "<=tablet") {
+    width: 100vw;
+    padding: 0px 24px 0px 24px;
+  }
 }
 
 .socials-container {

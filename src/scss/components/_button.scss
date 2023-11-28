@@ -7,6 +7,7 @@
   padding: 12px 28px 12px 28px;
   border: none;
   box-shadow: 4px 4px 0px map-get(theme.$colors, "surface1");
+  text-align: center;
 
   &.rosewater {
     background-color: map-get(theme.$colors, "rosewater");
@@ -18,5 +19,9 @@
 
   &.green {
     background-color: map-get(theme.$colors, "green");
+  }
+
+  @include media(">phone", "<=tablet") {
+    width: 80%;
   }
 }
