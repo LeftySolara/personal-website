@@ -6,6 +6,11 @@
   flex-flow: row nowrap;
   height: 80vh;
   color: map-get(theme.$colors, "base");
+
+  @include media(">phone", "<=desktop") {
+    flex-flow: column-reverse nowrap;
+    height: 100%;
+  }
 }
 
 .hero-image {
@@ -14,6 +19,11 @@
   height: 100%;
   border-bottom-left-radius: 54px;
   object-fit: cover;
+
+  @include media(">phone", "<=desktop") {
+    width: 100vw;
+    border-radius: 0px;
+  }
 }
 
 .hero-left {
@@ -23,6 +33,11 @@
   justify-content: center;
   gap: 40px;
   width: 50vw;
+
+  @include media(">phone", "<=desktop") {
+    width: 100vw;
+    gap: 20px;
+  }
 }
 
 .hero-heading {
@@ -31,11 +46,20 @@
   font-size: 96px;
   margin: 0;
   padding: 0;
+
+  @include media(">phone", "<=desktop") {
+    padding-top: 20px;
+    font-size: 64px;
+  }
 }
 
 .hero-body-container {
   width: 100%;
   padding: 0px 96px 0px 96px;
+
+  @include media(">phone", "<=tablet") {
+    padding: 0px 24px 0px 24px;
+  }
 }
 
 .hero-body {
@@ -77,4 +101,10 @@
   flex-flow: row nowrap;
   justify-content: space-evenly;
   width: 100%;
+
+  @include media(">phone", "<=tablet") {
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 32px;
+  }
 }
