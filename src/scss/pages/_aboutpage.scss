@@ -8,6 +8,10 @@
   align-items: center;
   height: 100vh;
   color: map-get(theme.$colors, "surface1");
+
+  @include media(">phone", "<=desktop") {
+    flex-flow: column-reverse nowrap;
+  }
 }
 
 #about-hero {
@@ -22,6 +26,12 @@
   font-size: 16px;
   font-weight: $font-weight-regular;
   line-height: 133%;
+
+  @include media(">phone", "<=desktop") {
+    width: 100%;
+    padding: 16px 48px 16px 48px;
+    text-align: justify;
+  }
 }
 
 #about-hero h1 {
@@ -33,6 +43,10 @@
 .quote {
   font-size: 20px;
   font-weight: $font-weight-light;
+
+  @include media(">phone", "<=desktop") {
+    font-size: 16px;
+  }
 }
 
 .about-text p a {
@@ -47,6 +61,10 @@
   align-items: center;
   width: 50%;
   height: 100%;
+
+  @include media(">phone", "<=desktop") {
+    width: 100vw;
+  }
 }
 
 .about-image {
@@ -54,6 +72,10 @@
   height: 550px;
   width: 550px;
   object-fit: cover;
+
+  @include media(">phone", "<=desktop") {
+    width: 100vw;
+  }
 }
 
 .about-button-container {
@@ -62,4 +84,16 @@
   justify-content: space-between;
   width: 100%;
   margin-top: 24px;
+
+  @include media(">phone", "<=desktop") {
+    flex-flow: column nowrap;
+    align-items: space-between;
+    gap: 24px;
+  }
+}
+
+.about-button-container .button {
+  @include media(">phone", "<=desktop") {
+    width: 100%;
+  }
 }
