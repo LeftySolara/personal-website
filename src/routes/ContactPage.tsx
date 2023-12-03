@@ -1,3 +1,5 @@
+import ButtonLink from "@/components/Button/ButtonLink";
+
 const ContactPage = () => {
   return (
     <div id="contact-page">
@@ -16,6 +18,17 @@ const ContactPage = () => {
           <a href="https://linkedin.com/in/julianneadams">LinkedIn,</a> and{" "}
           <a href="https://twitter.com/leftysolara">Twitter</a>.
         </p>
+        <div id="contact-button-container">
+          <ButtonLink color="rosewater" href="/">
+            HOME
+          </ButtonLink>
+          <ButtonLink color="sky" href="/projects">
+            MY PROJECTS
+          </ButtonLink>
+          <ButtonLink color="green" href="/about">
+            ABOUT ME
+          </ButtonLink>
+        </div>
       </div>
       <div id="contact-image-container">
         <img src="contact-image.jpg" />

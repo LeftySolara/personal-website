@@ -47,3 +47,11 @@
   width: 550px;
   height: 550px;
 }
+
+#contact-button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+}
