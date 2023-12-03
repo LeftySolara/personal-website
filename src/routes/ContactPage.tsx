@@ -1,7 +1,7 @@
 const ContactPage = () => {
   return (
     <div id="contact-page">
-      <div id="main-content">
+      <div id="contact-main-content">
         <h1>Contact Me</h1>
         <p>
           For inquiries about me or my work, feel free to send me an email at{" "}

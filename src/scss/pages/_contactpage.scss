@@ -1,0 +1,49 @@
+@use "../base/typography";
+@use "../themes/default" as theme;
+
+#contact-page {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: $body-font-stack;
+  font-size: 16px;
+  font-weight: $font-weight-regular;
+  line-height: 133%;
+  color: map-get(theme.$colors, "surface1");
+}
+
+#contact-main-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  padding: 0px 80px 0px 80px;
+}
+
+#contact-main-content h1 {
+  font-family: $heading-font-stack;
+  font-size: 64px;
+  color: map-get(theme.$colors, "base");
+}
+
+#contact-main-content p a {
+  font-weight: $font-weight-semibold;
+  color: map-get(theme.$colors, "mauve");
+}
+
+#contact-image-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-image-container img {
+  filter: grayscale(100%);
+  width: 550px;
+  height: 550px;
+}
