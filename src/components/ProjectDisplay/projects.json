@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "colorBackground": true,
+      "imageSrc": "personal-website.png",
+      "projectTitle": "Personal Website",
+      "projectDescription": [
+        "This is the site you're looking at now! It's my personal website which provides information about me, my projects, and how to get in touch.",
+        "The site was built using TypeScript, Vite, React, and Sass/SCSS. Tests are run using Vitest and React Testing Library.",
+        "With this project I learned a few best practices for Sass/SCSS, as this was my first real project that used it. I also improved my testing skills a bit. The biggest thing I learned with this project was how to deploy a Vite/React application on AWS."
+      ],
+      "techUsed": ["TypeScript", "React", "Sass/SCSS"],
+      "repoLink": "https://githuib.com/leftysolara/personal-website",
+      "siteLink": "/"
+    },
+    {
+      "colorBackground": false,
+      "imageSrc": "segfault.png",
+      "projectTitle": "Forum Website",
+      "projectDescription": [
+        "A small forum website dedicated to programming topics. Users can create accounts, log in/out, create threads, and post comments. This project uses Node.js on the backend and React.js on the frontend."
+      ],
+      "techUsed": ["TypeScript", "Node", "React"],
+      "repoLink": "https://github.com/LeftySolara/segfault-backend",
+      "siteLink": "https://segfault-fd20e.web.app/"
+    }
+  ]
+}
