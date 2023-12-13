@@ -27,6 +27,8 @@ h2 {
 
 #projects-page h2 {
   font-size: 28px;
+  line-height: 125%;
+  text-align: center;
 }
 
 #projects-page a {
@@ -43,6 +45,11 @@ h2 {
   gap: 40px;
   width: 50%;
   padding: 40px 0px 0px 0px;
+
+  @include media(">phone", "<=desktop") {
+    width: 100%;
+    padding: 0px 24px 0px 24px;
+  }
 }
 
 .projects-header-button-container {
@@ -50,6 +57,12 @@ h2 {
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 80%;
+
+  @include media(">phone", "<=desktop") {
+    flex-flow: column nowrap;
+    gap: 24px;
+    align-items: center;
+  }
 }
 
 .project {
@@ -62,6 +75,12 @@ h2 {
   &.rosewater {
     background-color: map-get(theme.$colors, "rosewater");
   }
+
+  @include media(">phone", "<=desktop") {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .project-image-container {
@@ -71,11 +90,20 @@ h2 {
   align-items: center;
   width: 600px;
   height: 400px;
+
+  @include media(">phone", "<=desktop") {
+    width: 100%;
+    height: 20vh;
+  }
 }
 
 .project-image {
   height: 100%;
   max-width: 600px;
+
+  @include media(">phone", "<=desktop") {
+    max-width: 100%;
+  }
 }
 
 .project-info-container {
@@ -95,4 +123,11 @@ h2 {
   flex-flow: row nowrap;
   justify-content: flex-start;
   gap: 48px;
+
+  @include media(">phone", "<=desktop") {
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 }
