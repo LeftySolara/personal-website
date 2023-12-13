@@ -1,4 +1,22 @@
 import ButtonLink from "@/components/Button/ButtonLink";
+import {
+  ProjectDisplayProps,
+  ProjectDisplay,
+} from "@/components/ProjectDisplay/ProjectDisplay";
+
+const projectDisplayProps: ProjectDisplayProps = {
+  colorBackground: true,
+  imageSrc: "personal-website.png",
+  projectTitle: "Personal Website",
+  projectDescription: [
+    "This is the site you're looking at now! It's my personal website which provides information about me, my projects, and how to get in touch.",
+    "The site was built using TypeScript, Vite, React, and Sass/SCSS. Tests are run using Vitest and React Testing Library.",
+    "With this project I learned a few best practices for Sass/SCSS, as this was my first real project that used it. I also improved my testing skills a bit. The biggest thing I learned with this project was how to deploy a Vite/React application on AWS.",
+  ],
+  techUsed: ["TypeScript", "React", "Sass/SCSS"],
+  repoLink: "https://githuib.com/leftysolara/personal-website",
+  siteLink: "/",
+};
 
 const ProjectsPage = () => {
   return (
@@ -24,43 +42,7 @@ const ProjectsPage = () => {
         </p>
       </div>
       <div className="projects-list">
-        <div className="project rosewater">
-          <div className="project-image-container">
-            <img className="project-image" src="personal-website.png" />
-          </div>
-          <div className="project-info-container">
-            <h2>Personal Website</h2>
-            <p>
-              This is the site you&apos;re looking at now! It&apos;s my personal
-              website which provides information about me, my projects, and how
-              to get in touch.
-            </p>
-            <p>
-              The site was built using TypeScript, Vite, React, and Sass/SCSS.
-              Tests are run using Vitest and React Testing Library.
-            </p>
-            <p>
-              With this project I learned a few best practices for Sass/SCSS, as
-              this was my first <em>real</em> project that used it. I also
-              improved my testing skills a bit. The biggest thing I learned with
-              this project was how to deploy a Vite/React application on AWS.
-            </p>
-            <p>
-              <strong>Technologies used</strong>: Typescript, React, Sass/SCSS
-            </p>
-            <div className="project-button-container">
-              <ButtonLink
-                href="https://github.com/leftysolara/personal-website"
-                color="sky"
-              >
-                VIEW THE CODE
-              </ButtonLink>
-              <ButtonLink href="/" color="green">
-                VISIT THE SITE
-              </ButtonLink>
-            </div>
-          </div>
-        </div>
+        <ProjectDisplay projectInfo={projectDisplayProps}></ProjectDisplay>
       </div>
     </div>
   );
