@@ -1,0 +1,41 @@
+@use "../themes/default" as theme;
+
+#projects-page {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  font-family: $body-font-stack;
+  line-height: 125%;
+}
+
+#projects-page h1,
+h2 {
+  font-family: $heading-font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+#projects-page a {
+  font-weight: $font-weight-semibold;
+  color: map-get(theme.$colors, "mauve");
+}
+
+.projects-header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 50%;
+  padding: 40px 0px 40px 0px;
+}
+
+.projects-button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 80%;
+}

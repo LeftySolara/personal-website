@@ -1,8 +1,28 @@
+import ButtonLink from "@/components/Button/ButtonLink";
+
 const ProjectsPage = () => {
   return (
     <div id="projects-page">
-      <h1>My Projects</h1>
-      <i>This page is currently under construction.</i>
+      <div className="projects-header">
+        <h1>My Projects</h1>
+        <div className="projects-button-container">
+          <ButtonLink href="/" color="rosewater">
+            HOME
+          </ButtonLink>
+          <ButtonLink href="/about" color="sky">
+            ABOUT ME
+          </ButtonLink>
+          <ButtonLink href="/contact" color="green">
+            GET IN TOUCH
+          </ButtonLink>
+        </div>
+        <p>
+          This is a collection of some of my programming projects. These are
+          mostly just the ones I learned the most from and had the most fun
+          with. To see all of my projects, please visit my{" "}
+          <a href="https://github.com/leftysolara">GitHub</a> profile.
+        </p>
+      </div>
     </div>
   );
 };
