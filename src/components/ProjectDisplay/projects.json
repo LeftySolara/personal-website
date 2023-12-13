@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "colorBackground": true,
+      "imageSrc": "personal-website.png",
+      "projectTitle": "Personal Website",
+      "projectDescription": [
+        "This is the site you're looking at now! It's my personal website which provides information about me, my projects, and how to get in touch.",
+        "The site was built using TypeScript, Vite, React, and Sass/SCSS. Tests are run using Vitest and React Testing Library.",
+        "With this project I learned a few best practices for Sass/SCSS, as this was my first real project that used it. I also improved my testing skills a bit. The biggest thing I learned with this project was how to deploy a Vite/React application on AWS."
+      ],
+      "techUsed": ["TypeScript", "React", "Sass/SCSS"],
+      "repoLink": "https://githuib.com/leftysolara/personal-website",
+      "siteLink": "/"
+    },
+    {
+      "colorBackground": false,
+      "imageSrc": "segfault.png",
+      "projectTitle": "Forum Website",
+      "projectDescription": [
+        "A small forum website dedicated to programming topics. Users can create accounts, log in/out, create threads, and post comments. This project uses Node.js on the backend and React.js on the frontend."
+      ],
+      "techUsed": ["TypeScript", "Node", "React"],
+      "repoLink": "https://github.com/LeftySolara/segfault-backend",
+      "siteLink": "https://segfault-fd20e.web.app/"
+    },
+    {
+      "colorBackground": true,
+      "imageSrc": "pantomime.png",
+      "projectTitle": "Pantomime Music Player",
+      "projectDescription": [
+        "Pantomime is a TUI music player built with NCURSES. It connects to your local or remote MPD instance and allows you to control playback, browse your library, and modify your current playlist. It was inspired by other MPD clients such as ncmpc and ncmpcpp.",
+        "With this project I learned how to use CMake, along with design patterns such as the Singleton pattern and the Command pattern."
+      ],
+      "techUsed": ["C", "NCURSES", "CMake", "libmpdclient"],
+      "repoLink": "https://github.com/LeftySolara/pantomime"
+    },
+    {
+      "colorBackground": false,
+      "imageSrc": "mpd_rpc.png",
+      "projectTitle": "MPD Rich Presence for Discord",
+      "projectDescription": [
+        "This is a basic implementation of Discord Rich Presence for MPD. It detects the currently playing song in MPD and sets your Discord status to display the track information."
+      ],
+      "techUsed": ["C", "CMake", "discord-rpc", "libmpdclient"],
+      "repoLink": "https://github.com/LeftySolara/mpd-discord-rpc"
+    },
+    {
+      "colorBackground": true,
+      "imageSrc": "pypong.gif",
+      "projectTitle": "Pong Clone",
+      "projectDescription": [
+        "PyPong is a recreation of the classic game Pong, but written in Python. The game allows you to play against a computer-controlled opponent and keeps score.",
+        "This project taught me the basics of the PyGame library, as well as how to write a proper game loop."
+      ],
+      "techUsed": ["Python", "PyGame"],
+      "repoLink": "https://github.com/LeftySolara/pypong"
+    }
+  ]
+}

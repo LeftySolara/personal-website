@@ -1,0 +1,133 @@
+@use "../themes/default" as theme;
+
+#projects-page {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  font-family: $body-font-stack;
+  font-size: 16px;
+  line-height: 125%;
+  color: map-get(theme.$colors, "surface1");
+}
+
+#projects-page h1,
+h2 {
+  font-family: $heading-font-stack;
+  color: map-get(theme.$colors, "base");
+  margin: 0;
+  padding: 0;
+}
+
+#projects-page h1 {
+  font-size: 40px;
+}
+
+#projects-page h2 {
+  font-size: 28px;
+  line-height: 125%;
+  text-align: center;
+}
+
+#projects-page a {
+  font-weight: $font-weight-semibold;
+  color: map-get(theme.$colors, "mauve");
+}
+
+.projects-header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 50%;
+  padding: 40px 0px 0px 0px;
+
+  @include media(">phone", "<=desktop") {
+    width: 100%;
+    padding: 0px 24px 0px 24px;
+  }
+}
+
+.projects-header-button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 80%;
+
+  @include media(">phone", "<=desktop") {
+    flex-flow: column nowrap;
+    gap: 24px;
+    align-items: center;
+  }
+}
+
+.project {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 40px;
+  width: 100vw;
+  padding: 48px;
+
+  &.rosewater {
+    background-color: map-get(theme.$colors, "rosewater");
+  }
+
+  @include media(">phone", "<=desktop") {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.project-image-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+
+  @include media(">phone", "<=desktop") {
+    width: 100%;
+    height: 20vh;
+  }
+}
+
+.project-image {
+  height: 100%;
+  max-width: 600px;
+
+  @include media(">phone", "<=desktop") {
+    max-width: 100%;
+  }
+}
+
+.project-info-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.project-info-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.project-button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 48px;
+
+  @include media(">phone", "<=desktop") {
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
